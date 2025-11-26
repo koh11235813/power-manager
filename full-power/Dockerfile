@@ -24,11 +24,9 @@ RUN wget https://developer.download.nvidia.com/compute/redist/jp/v61/pytorch/tor
 
 
 # Ultralyticsライブラリをインストール
-# これでCUDA対応のPyTorchが自動で入ります
 RUN pip3 install ultralytics
 
 # 実行スクリプトをコンテナにコピー
-# (ビルドコンテキストに応じてパスを修正してください)
 COPY full-power/hogehoge.sh /hogehoge.sh 
 # COPY low-power/hogehoge.sh /hogehoge.sh # low-power用
 
